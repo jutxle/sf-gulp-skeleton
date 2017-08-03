@@ -4,12 +4,13 @@
   "scripts": {
     "build": "gulp build",
     "deploy": "gulp deploy",
-    "release": "BABEL_ENV=production gulp deploy"
+    "release": "cross-env BABEL_ENV=production gulp deploy"
   },
   "author": "jlevay@acumensolutions.com",
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "babili": "^0.1.4",
+    "cross-env": "^5.0.3",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
