@@ -1,23 +1,20 @@
 {
   "name": "sf-gulp-skeleton",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "release": "BABEL_ENV=production gulp deploy"
   },
   "author": "jlevay@acumensolutions.com",
-  "license": "ISC",
   "devDependencies": {
-    "babel-plugin-transform-class-properties": "^6.10.2",
-    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-env": "^1.6.0",
+    "babili": "^0.1.4",
     "del": "^2.2.1",
-    "eslint": "^3.2.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^1.3.0",
     "gulp-jsforce-deploy": "^1.1.2",
-    "gulp-minify": "0.0.13",
     "gulp-zip": "^3.2.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
